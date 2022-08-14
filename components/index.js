@@ -1,0 +1,9 @@
+export { default as TitlePage } from "./TitlePage/TitlePage";
+export { default as PostPage } from "./PostPage/PostPage";
+export { default as SwiperPage } from "./SwiperPage/SwiperPage";
+export { default as TeamPage } from "./TeamPage/TeamPage";
+export { default as QuotePage } from "./QuotePage/QuotePage";
+export { default as ContactPage } from "./ContactPage/ContactPage";
+export { default as FaqPage } from "./FaqPage/FaqPage";
+export { default as BottomSwiperPage } from "./BottomSwiperPage/BottomSwiper";
+export { default as Footer } from "./Footer/Footer";

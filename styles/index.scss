@@ -1,0 +1,142 @@
+$tablet-width: 768px;
+$mobileL-width: 425px;
+$mobile-width: 375px;
+
+.container {
+  margin: 0 16vh;
+
+  &--swiper {
+    margin: 0 13vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  &--quote {
+    margin: 0 8vh 20vh 8vh;
+  }
+}
+
+.btn {
+  background-color: #f2726c;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  font-weight: 700;
+  padding: 1.5vh 3vh;
+  font-size: 2vh;
+  &--search {
+    padding: 1.5vh 3vh;
+    display: table-cell;
+    letter-spacing: 0.2vh;
+  }
+  &--login {
+    display: block;
+    width: 100%;
+    font-size: 1.5vh;
+    padding: 1.5vh 0;
+  }
+  &--faq {
+    max-width: fit-content;
+    padding: 1.5vh 4vh;
+  }
+}
+
+.gray {
+  color: #807c7c;
+}
+
+.play {
+  position: absolute;
+  z-index: 5;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 30%;
+  text-align: center;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 4vh;
+  color: #222433;
+
+  &--sm {
+    font-weight: 600;
+    font-size: 4vh;
+    text-align: center;
+  }
+}
+
+.subtext {
+  font-size: 1.8vh;
+  line-height: 32px;
+}
+
+.divider {
+  height: 4px;
+  width: 60%;
+  background: #1e1a20;
+  border: 0;
+  margin: 6.2vh 0 7.2vh 0;
+}
+
+.leaf {
+  &--sm {
+    width: 5vh;
+    height: 3vh;
+    margin-top: 1vh;
+    margin-left: 1vh;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .container {
+    margin: 0 5vh;
+    &--swiper {
+      margin: 10vh 0 0 0;
+    }
+    &--quote {
+      margin-bottom: 10vh;
+    }
+  }
+  .btn {
+    padding: 2.5vh 3vh;
+    width: 20%;
+    font-size: 2.5vh;
+    &--login,
+    &--faq {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: $tablet-width) {
+  p {
+    font-size: 3.5vh;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .btn {
+    &--search {
+      padding: 2.5vh 8vh;
+      display: flex;
+      justify-content: center;
+      font-size: 2vh;
+      align-items: center;
+    }
+  }
+}
+
+@import "./components/TitlePage/TitlePage.scss";
+@import "./components/PostPage/PostPage.scss";
+@import "./components/SwiperPage/SwiperPage.scss";
+@import "./components/TeamPage/TeamPage.scss";
+@import "./components//QuotePage/QuotePage.scss";
+@import "./components//ContactPage/ContactPage.scss";
+@import "./components//FaqPage/FaqPage.scss";
+@import "./components/BottomSwiperPage/BottomSwiperPage.scss";
+@import "./components/Footer/Footer.scss";

@@ -1,0 +1,107 @@
+@import "./Header.scss";
+
+.title-page {
+  background-color: #f7f3f4;
+  padding-bottom: 15vh;
+}
+
+.title-page__content {
+  margin-top: 7vh;
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .title-page__group1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    width: 45%;
+    padding-top: 6vh;
+  }
+  .title-page__group2 {
+    position: relative;
+    display: flex;
+    width: 45%;
+    .members {
+      position: absolute;
+      z-index: 5;
+      left: -6.5vh;
+      bottom: -6.5vh;
+
+      .members__icon {
+        position: absolute;
+        top: 3.2vh;
+        left: 3.2vh;
+      }
+      h2,
+      span {
+        position: inherit;
+        z-index: 10;
+        color: white;
+      }
+      h2 {
+        bottom: 11vh;
+        left: 3.2vh;
+      }
+      span {
+        font-size: 6.5vh;
+        font-weight: 700;
+        bottom: 4.2vh;
+        left: 3.2vh;
+        line-height: 8vh;
+      }
+    }
+  }
+  .search {
+    background-color: white;
+    display: table;
+    padding: 0.8vh;
+    border-radius: 40px;
+    width: 90%;
+    display: flex;
+    .search__group1 {
+      padding: 1.2vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1vh;
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .title-page__content {
+    flex-wrap: wrap;
+  }
+  .title-page__content .title-page__group2 .members h2,
+  .title-page__content .title-page__group2 .members span {
+    padding-left: 5vh;
+    padding-bottom: 5vh;
+  }
+  .title-page__content .title-page__group1 {
+    width: 100%;
+  }
+  .title-page__content .search {
+    width: 100%;
+  }
+  .title-page__content .search .search__group1 {
+    gap: 4vh;
+  }
+  .title-page__content .title-page__group2 {
+    width: 100%;
+    justify-content: center;
+    margin: 8vh 8vh 0 8vh;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .title-page__content .title-page__group2 {
+    margin: 8vh 8vh 0 23vh;
+  }
+
+  .title-page__content .title-page__group2 .members {
+    left: -25vh;
+  }
+}

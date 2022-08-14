@@ -1,0 +1,74 @@
+.quote-page {
+  position: relative;
+  .quote-page__background {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 0;
+    .left,
+    .right {
+      width: 13vh;
+      height: 40vh;
+    }
+    .background-sm {
+      display: none;
+      .left-sm,
+      .right-sm {
+        width: 15vh;
+        height: 15vh;
+      }
+    }
+  }
+  .quote-page__circle {
+    width: 43vh;
+    height: 43vh;
+    background: linear-gradient(
+      180deg,
+      #f7f3f4 26.49%,
+      rgba(247, 243, 244, 0) 100%
+    );
+    border-radius: 100%;
+  }
+
+  .quote-page__content {
+    padding-top: 20vh;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h3 {
+      text-align: center;
+      max-width: 100vh;
+      font-size: 5vh;
+      line-height: 7vh;
+    }
+  }
+}
+
+@import "./Advantage.scss";
+
+@media (max-width: $mobileL-width) {
+  .quote-page {
+    .quote-page__content {
+      h3 {
+        font-size: 4vh;
+      }
+    }
+    .quote-page__background {
+      flex-direction: column;
+      align-items: center;
+      .left,
+      .right {
+        display: none;
+      }
+      .background-sm {
+        display: flex;
+        gap: 15vh;
+      }
+    }
+  }
+}
